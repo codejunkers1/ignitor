@@ -1,0 +1,44 @@
+/*
+    Ignitor 
+    Authors: 
+      Venkata Sai Katepalli
+      Teshu Katepalli
+*/
+*
+  -webkit-box-sizing: border-box
+  -moz-box-sizing: border-box
+  box-sizing: border-box
+*:before, *:after
+  -webkit-box-sizing border-box
+  -moz-box-sizing border-box
+  box-sizing border-box
+.i-container-fluid, .i-container
+  padding-right 14px
+  padding-left 14px
+  margin-right auto
+  margin-left auto
+.row
+  margin-right -14px
+  margin-left -14px
+.col
+  padding-left 14px
+  padding-right 14px
+  float left
+  position relative
+  min-height 1px
+designGrid(label)
+    for row in (1..12)
+        .{label}-{row}
+            @extend .col
+            width ((100/12)% * row)
+        .{label}-offset-{row}
+            margin-left ((100/12)% * row)
+makeGrid(WScreen, WPreview, label)
+    @media (min-width: (WScreen * 1px))
+        .i-container
+            width (WPreview * 1px)
+        designGrid(label)
+makeGrid(768, 750, 'sm')
+makeGrid(992, 970, 'md')
+makeGrid(1200, 1170, 'lg')
+designGrid('xs')
