@@ -1,13 +1,13 @@
-# Ignitor
+# Ignitor CSS
 css framework for UI
 
 ## CDN
 At present we are using two css supports.
-- CSS: [https://cdn.codejunkers.in/ignitor/css/ignitor.css](https://cdn.codejunkers.in/ignitor/css/ignitor.css)
-- STYLUS: [https://cdn.codejunkers.in/ignitor/css/ignitor.styl](https://cdn.codejunkers.in/ignitor/css/ignitor.styl)
+- CSS: [https://cdn.codejunkers.in/ignitorcss/v1.0.0/css/ignitor.min.css](https://cdn.codejunkers.in/ignitorcss/v1.0.0/css/ignitor.min.css)
+- STYLUS: [https://cdn.codejunkers.in/ignitorcss/v1.0.0/css/ignitor.styl](https://cdn.codejunkers.in/ignitorcss/v1.0.0/css/ignitor.styl)
 
 ## Links
-- WEBSITE: [Ignitor](https://ignitor.codejunkers.in/)
+- WEBSITE: [Ignitorcss](https://ignitor.codejunkers.in/)
 
 ## Contributors
 - Teshu Katepalli
