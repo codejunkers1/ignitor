@@ -1,7 +1,8 @@
 /*
     Ignitor 
-    Authors: Venkata Sai Katepalli
-   Version: 1.0
+    Authors: 
+      Venkata Sai Katepalli
+      Teshu Katepalli
 */
 @charset "UTF-8"
 html, body, div, span, applet, object, iframe,
@@ -50,22 +51,22 @@ h1, h2, h3, h4, h5, h6, th, td, caption
         box-sizing inherit
 
 ol, ul
-	list-style none
+    list-style none
 
 blockquote, q
     quotes none
     &:before, &:after
-	    content ''
-	    content none
+        content ''
+        content none
 
 img, embed, iframe, object, audio, video
     height auto
     max-width 100%
 
 table
-	border-collapse collapse
-	border-spacing 0
-	
+    border-collapse collapse
+    border-spacing 0
+    
 td, th
     text-align left
     vertical-align top
@@ -104,7 +105,11 @@ p
   float right
 .f-left
   float left
-.align-center
+.bold
+  font-weight bold
+.light
+  font-weight 100
+.center
   display table
   margin 0 auto
 
@@ -240,6 +245,47 @@ for row in (0..4)
     color #595959
     background-color transparent!important
 
+/**
+    Grid System
+*/
+*
+  -webkit-box-sizing: border-box
+  -moz-box-sizing: border-box
+  box-sizing: border-box
+*:before, *:after
+  -webkit-box-sizing border-box
+  -moz-box-sizing border-box
+  box-sizing border-box
+.i-container-fluid, .i-container
+  padding-right 14px
+  padding-left 14px
+  margin-right auto
+  margin-left auto
+.row
+  margin-right -14px
+  margin-left -14px
+.col
+  padding-left 14px
+  padding-right 14px
+  float left
+  position relative
+  min-height 1px
+designGrid(label)
+    for row in (1..12)
+        .{label}-{row}
+            @extend .col
+            width ((100/12)% * row)
+        .{label}-offset-{row}
+            margin-left ((100/12)% * row)
+makeGrid(WScreen, WPreview, label)
+    @media (min-width: (WScreen * 1px))
+        .i-container
+            width (WPreview * 1px)
+        designGrid(label)
+makeGrid(768, 750, 'sm')
+makeGrid(992, 970, 'md')
+makeGrid(1200, 1170, 'lg')
+designGrid('xs')
 /**
     Table styles
 **/

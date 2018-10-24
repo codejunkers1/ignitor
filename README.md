@@ -1,5 +1,7 @@
 # Ignitor
-css framework for UI
+[![npm version](https://img.shields.io/npm/v/ignitor.svg?style=flat-square)](https://www.npmjs.org/package/ignitor)
+[![npm downloads](https://img.shields.io/npm/dm/ignitor.svg?style=flat-square)](http://npm-stat.com/charts.html?package=ignitor)
+[![LICENSE](https://img.shields.io/github/license/codejunkers1/ignitor.svg?style=flat-square)](https://github.com/codejunkers1/ignitor)
 
 ## CDN
 At present we are using two css supports.
@@ -7,8 +9,8 @@ At present we are using two css supports.
 - STYLUS: [https://cdn.codejunkers.in/ignitor/css/ignitor.styl](https://cdn.codejunkers.in/ignitor/css/ignitor.styl)
 
 ## Links
-- WEBSITE: [Ignitor](https://ignitor.codejunkers.in/)
+- WEBSITE: [Docs](https://ignitor.codejunkers.in/)
 
-## Contributors
+## Credits
 - Teshu Katepalli
 - Venkata Sai Katepalli
